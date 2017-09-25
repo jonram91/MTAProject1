@@ -1,0 +1,68 @@
+David's lecture on Complexity
+
+Lecture on Complexity. The number of core you have determines how many things
+you can do at the same time? 
+
+The highest exponent is what is going to blow up on us. 
+
+Big O only cares about the highest exponent. 
+
+Dictionary is a constant look up time. O(1). Zack (the student) seems to know
+about this stuff. 
+
+O(log(n)) is something that starts out slow but evens out after a while and so
+is not too bad. 
+
+Complexity is a characteristic of the algorithm. Performance is about your
+hardware.  
+
+Nested loops: we go through a loop n times and each of those goes through a
+nested loop m times. So we have O(mn) complexity. 
+
+Big O is worst case, not average case. 
+
+There is a trade-off between flexibility and performance with data structures.
+The list is the most flexible and the least performant. 
+
+List: 
+Mutable, mixed-type
+
+bad for a lot of floating point numbers. Use an array. There is a python array
+but the thing about an array is that it has the same type of data. 
+
+Constantly removing or adding things, especially from in the middle. Or you have
+to add or remove from the opposite ends of the list. Use a deque. Can add pop or
+push from either end. 
+
+tuple is a lot faster when looking up so you use it if you don't have to mutate
+it. 
+
+Tuples can have multiple types. 
+
+Dicitonaries have a lot of memory overhead because you have to store the whole
+hash table. Lists can just store pointers to the data. 
+
+Conda environment
+
+One of those things you wish you knew before hand. 
+
+Virtual environments, little containers for your programs and dependencies. Have
+different versions of python. 
+
+$conda create -n python3.5
+
+$ source activate python3.5
+
+$ source deactivate
+gets you out of the environment
+
+$ conda env list 
+Shows all of your environments
+
+
+
+We install the conda install nb.notebook and it makes jupyter notebook able to
+open and choose new environments. Kernell and environment seem to be synonyms.
+What is the difference between a kernel and an environment? 
+
+I am still not sure I know what I am doing with all this. 
